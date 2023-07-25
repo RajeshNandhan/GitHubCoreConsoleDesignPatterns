@@ -1,10 +1,17 @@
-﻿namespace CreationalPatterns
+﻿using CreationalPatterns.FactoryMethod;
+
+namespace CreationalPatterns
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            FactoryMethodTest();
+        }
+
+        private static void FactoryMethodTest()
+        {
+            FactoryMethodClient.TestMethod();
         }
     }
 }

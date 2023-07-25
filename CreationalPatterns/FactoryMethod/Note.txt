@@ -1,0 +1,15 @@
+﻿
+Note
+
+The Factory Method design pattern defines an interface (AbstractProductCreator) for creating an object, 
+
+but let subclasses (derived classes) (ConcreteProductComputerCreator, ConcreteProductLaptopCreator, ConcreteProductMobileCreator) 
+decide which class to instantiate.
+
+
+This pattern lets a class defer instantiation to subclasses.
+
+here class to instantiate as object are (ConcreteProductComputer, ConcreteProductLaptop, ConcreteProductMobile)
+
+
+Frequency of use: high
