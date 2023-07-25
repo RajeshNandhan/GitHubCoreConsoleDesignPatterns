@@ -1,14 +1,9 @@
 ﻿using System;
 
-namespace CreationalPatterns.FactoryMethod
+namespace CreationalPatterns.AbstractFactory
 {
-    internal class FactoryMethodClient
+    internal class AbstractFactoryClient
     {
-        /// <summary>
-        /// BuyProduct - Client implementation
-        /// user provides a choice of product
-        /// based on user choice of product, particular product created using factory method
-        /// </summary>
         public static void BuyProduct()
         {
             bool canContinue;
@@ -40,9 +35,11 @@ namespace CreationalPatterns.FactoryMethod
 
                 if (canContinue)
                 {
-                    AbstractProduct abstractProduct = productFactory.FactoryMethod_CreateProduct();
+                    KeyboardAbstractProduct keyboardAbstractProduct = productFactory.Create_KeyboardAbstractProduct();
 
-                    Console.WriteLine("\n " + abstractProduct.ToProductString() + " \n");
+                    MonitorAbstractProduct monitorAbstractProduct = productFactory.Create_MonitorAbstractProduct();
+
+                    Console.WriteLine("\n " + keyboardAbstractProduct.ToProductString() + " " + monitorAbstractProduct.ToProductString() + " \n");
                 }
                 else
                 {

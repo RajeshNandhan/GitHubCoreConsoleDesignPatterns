@@ -1,4 +1,5 @@
-﻿using CreationalPatterns.FactoryMethod;
+﻿using CreationalPatterns.AbstractFactory;
+using CreationalPatterns.FactoryMethod;
 
 namespace CreationalPatterns
 {
@@ -6,12 +7,19 @@ namespace CreationalPatterns
     {
         static void Main(string[] args)
         {
-            FactoryMethodTest();
+            //FactoryMethodTest();
+
+            AbstractFactoryTest();
         }
 
         private static void FactoryMethodTest()
         {
             FactoryMethodClient.TestMethod();
+        }
+
+        private static void AbstractFactoryTest()
+        {
+            AbstractFactoryClient.TestMethod();
         }
     }
 }

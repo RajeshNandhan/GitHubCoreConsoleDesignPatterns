@@ -3,7 +3,7 @@
     /// <summary>
     /// AbstractProductCreator
     /// </summary>
-    internal abstract class AbstractProductCreator
+    internal abstract class AbstractProductFactory
     {
         /// <summary>
         /// This Method will create a product based on the "Creater" 

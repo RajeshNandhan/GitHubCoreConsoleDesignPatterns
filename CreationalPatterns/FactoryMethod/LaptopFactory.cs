@@ -1,10 +1,10 @@
 ﻿namespace CreationalPatterns.FactoryMethod
 {
-    internal class ConcreteProductMobileCreator : AbstractProductCreator
+    internal class LaptopFactory : AbstractProductFactory
     {
         public override AbstractProduct FactoryMethod_CreateProduct()
         {
-            return new ConcreteProductMobile();
+            return new Laptop("15 inch", "104");
         }
     }
 }

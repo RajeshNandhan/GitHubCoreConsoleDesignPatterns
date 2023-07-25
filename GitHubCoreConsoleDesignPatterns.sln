@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{78C246AF
 	ProjectSection(SolutionItems) = preProject
 		Notes\Git.txt = Notes\Git.txt
 		Notes\Links.txt = Notes\Links.txt
+		Notes\PatternsDescription.txt = Notes\PatternsDescription.txt
 	EndProjectSection
 EndProject
 Global

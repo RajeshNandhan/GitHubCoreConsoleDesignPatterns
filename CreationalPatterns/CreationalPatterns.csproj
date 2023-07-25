@@ -43,14 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\AbstractFactoryClient.cs" />
+    <Compile Include="AbstractFactory\AbstractProductFactory.cs" />
+    <Compile Include="AbstractFactory\IPodFactory.cs" />
+    <Compile Include="AbstractFactory\IPodKeyboard.cs" />
+    <Compile Include="AbstractFactory\IPodMonitor.cs" />
+    <Compile Include="AbstractFactory\KeyboardAbstractProduct.cs" />
+    <Compile Include="AbstractFactory\LaptopFactory.cs" />
+    <Compile Include="AbstractFactory\LaptopKeyboard.cs" />
+    <Compile Include="AbstractFactory\LaptopMonitor.cs" />
+    <Compile Include="AbstractFactory\MobileFactory.cs" />
+    <Compile Include="AbstractFactory\MobileKeyboard.cs" />
+    <Compile Include="AbstractFactory\MobileMonitor.cs" />
+    <Compile Include="AbstractFactory\MonitorAbstractProduct.cs" />
     <Compile Include="FactoryMethod\AbstractProduct.cs" />
-    <Compile Include="FactoryMethod\AbstractProductCreator.cs" />
-    <Compile Include="FactoryMethod\ConcreteProductComputer.cs" />
-    <Compile Include="FactoryMethod\ConcreteProductComputerCreator.cs" />
-    <Compile Include="FactoryMethod\ConcreteProductLaptop.cs" />
-    <Compile Include="FactoryMethod\ConcreteProductLaptopCreator.cs" />
-    <Compile Include="FactoryMethod\ConcreteProductMobile.cs" />
-    <Compile Include="FactoryMethod\ConcreteProductMobileCreator.cs" />
+    <Compile Include="FactoryMethod\AbstractProductFactory.cs" />
+    <Compile Include="FactoryMethod\IPod.cs" />
+    <Compile Include="FactoryMethod\IPodFactory.cs" />
+    <Compile Include="FactoryMethod\Laptop.cs" />
+    <Compile Include="FactoryMethod\LaptopFactory.cs" />
+    <Compile Include="FactoryMethod\Mobile.cs" />
+    <Compile Include="FactoryMethod\MobileFactory.cs" />
     <Compile Include="FactoryMethod\FactoryMethodClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,7 +76,6 @@
     <Content Include="FactoryMethod\Note.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AbstractFactory\" />
     <Folder Include="Builder\" />
     <Folder Include="Prototype\" />
     <Folder Include="Singleton\" />
