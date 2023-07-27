@@ -3,7 +3,7 @@
     /// <summary>
     /// ConcreteProductLaptop
     /// </summary>
-    internal class Laptop: AbstractProduct
+    internal class Laptop : AbstractProduct
     {
         public Laptop(string monitorSize, string numberOfKeys)
         {

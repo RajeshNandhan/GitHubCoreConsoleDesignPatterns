@@ -56,6 +56,12 @@
     <Compile Include="AbstractFactory\MobileKeyboard.cs" />
     <Compile Include="AbstractFactory\MobileMonitor.cs" />
     <Compile Include="AbstractFactory\MonitorAbstractProduct.cs" />
+    <Compile Include="Builder\BuilderClient.cs" />
+    <Compile Include="Builder\IPodBuilder.cs" />
+    <Compile Include="Builder\MobileBuilder.cs" />
+    <Compile Include="Builder\Product.cs" />
+    <Compile Include="Builder\AbstractProductBuilder.cs" />
+    <Compile Include="Builder\LaptopBuilder.cs" />
     <Compile Include="FactoryMethod\AbstractProduct.cs" />
     <Compile Include="FactoryMethod\AbstractProductFactory.cs" />
     <Compile Include="FactoryMethod\IPod.cs" />
@@ -73,10 +79,10 @@
     <None Include="CreationalPatternsClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Builder\Note.txt" />
     <Content Include="FactoryMethod\Note.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Builder\" />
     <Folder Include="Prototype\" />
     <Folder Include="Singleton\" />
   </ItemGroup>
