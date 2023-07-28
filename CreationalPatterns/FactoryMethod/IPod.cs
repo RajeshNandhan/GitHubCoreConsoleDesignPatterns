@@ -1,6 +1,4 @@
-﻿using CreationalPatterns.FactoryMethod;
-
-namespace CreationalPatterns.FactoryMethod
+﻿namespace CreationalPatterns.FactoryMethod
 {
     /// <summary>
     /// ConcreteProductComputer
