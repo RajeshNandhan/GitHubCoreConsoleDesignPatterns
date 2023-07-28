@@ -1,6 +1,7 @@
 ﻿using CreationalPatterns.AbstractFactory;
 using CreationalPatterns.Builder;
 using CreationalPatterns.FactoryMethod;
+using CreationalPatterns.Prototype;
 using CreationalPatterns.Singleton;
 
 namespace CreationalPatterns
@@ -15,7 +16,9 @@ namespace CreationalPatterns
 
             //BuilderTest();
 
-            SingletonTest();
+            //SingletonTest();
+
+            PrototypeClientTest();
         }
 
         private static void FactoryMethodTest()
@@ -37,6 +40,10 @@ namespace CreationalPatterns
         {
             SingletonClient.TestMethod();
         }
-        
+
+        private static void PrototypeClientTest()
+        {
+            PrototypeClient.TestMethod();
+        }
     }
 }
