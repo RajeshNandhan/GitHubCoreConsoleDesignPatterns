@@ -11,7 +11,7 @@
             return "KeyBoard";
         }
 
-        public int GetKeyCost()
+        public int GetKeyBoardCost()
         {
             return 250;
         }
@@ -19,7 +19,7 @@
         /* --------------------------------------*/
         public override int GetProductCost()
         {
-            return base.GetProductCost() + GetKeyCost();
+            return base.GetProductCost() + GetKeyBoardCost();
         }
 
         public override string GetProductName()

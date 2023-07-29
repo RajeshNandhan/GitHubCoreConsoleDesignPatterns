@@ -1,5 +1,6 @@
 ﻿using StructuralPatterns.Adapter;
 using StructuralPatterns.Decorator;
+using StructuralPatterns.Facade;
 
 namespace StructuralPatterns
 {
@@ -8,7 +9,8 @@ namespace StructuralPatterns
         static void Main(string[] args)
         {
             //AdapterClientTest();
-            DecoratorClientTest();
+            //DecoratorClientTest();
+            FacadeClientTest();
         }
 
         private static void AdapterClientTest()
@@ -19,6 +21,11 @@ namespace StructuralPatterns
         private static void DecoratorClientTest()
         {
             DecoratorClient.TestMethod();
+        }
+
+        private static void FacadeClientTest()
+        {
+            FacadeClient.TestMethod();
         }
     }
 }

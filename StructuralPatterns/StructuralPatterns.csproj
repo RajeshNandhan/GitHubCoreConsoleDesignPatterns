@@ -56,11 +56,16 @@
     <Compile Include="Decorator\KeyboardAccessoryProductDecorator.cs" />
     <Compile Include="Decorator\IProduct.cs" />
     <Compile Include="Decorator\ComputerProduct.cs" />
-    <Compile Include="Decorator\IPodProduct.cs" />
     <Compile Include="Decorator\LaptopProduct.cs" />
     <Compile Include="Decorator\MouseAccessoryProductDecorator.cs" />
     <Compile Include="Decorator\MobileProduct.cs" />
     <Compile Include="Decorator\DeviceCoverAccessoryProductDecorator.cs" />
+    <Compile Include="Facade\Computer.cs" />
+    <Compile Include="Facade\FacadeClient.cs" />
+    <Compile Include="Facade\IPod.cs" />
+    <Compile Include="Facade\Laptop.cs" />
+    <Compile Include="Facade\Mobile.cs" />
+    <Compile Include="Facade\ProductPurchaseFacade.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,7 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Composite\" />
-    <Folder Include="Facade\" />
     <Folder Include="Flyweight\" />
     <Folder Include="Proxy\" />
   </ItemGroup>

@@ -1,6 +1,6 @@
-﻿namespace StructuralPatterns.Decorator
+﻿namespace StructuralPatterns.Facade
 {
-    internal class IPodProduct : IProduct
+    internal class IPod
     {
         public int GetProductCost()
         {
@@ -10,6 +10,11 @@
         public string GetProductName()
         {
             return "IPod";
+        }
+
+        public int GetDeviceCoverCost()
+        {
+            return 70;
         }
     }
 }
