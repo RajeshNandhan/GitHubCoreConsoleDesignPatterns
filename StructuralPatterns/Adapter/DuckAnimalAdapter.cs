@@ -1,23 +1,23 @@
 ﻿namespace StructuralPatterns.Adapter
 {
-    internal class DuckConcreteAnimalAdapter : IAnimalAdapter
+    internal class DuckAnimalAdapter : IAnimalAdapter
     {
         /// <summary>
         /// Composition (create instance) of Duck class
         /// </summary>
         private readonly Duck duck;
 
-        public DuckConcreteAnimalAdapter(Duck duck)
+        public DuckAnimalAdapter(Duck duck)
         {
             this.duck = duck;
         }
 
-        public string MakeNoise()
+        public string Speak()
         {
             return duck.Quack();
         }
 
-        public string Movement()
+        public string Move()
         {
             return duck.Swim();
         }

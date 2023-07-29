@@ -20,13 +20,13 @@ namespace StructuralPatterns.Adapter
                 switch (userEnteredKey)
                 {
                     case "l":
-                        animalAdapter = new LionConcreteAnimalAdapter(new Lion()); //--Composition Adapter
+                        animalAdapter = new LionAnimalAdapter(new Lion()); //--Composition Adapter
                         break;
                     case "p":
-                        animalAdapter = new PigConcreteAnimalAdapter();//-Inheritence Adapter
+                        animalAdapter = new PigAnimalAdapter();//-Inheritence Adapter
                         break;
                     case "d":
-                        animalAdapter = new DuckConcreteAnimalAdapter(new Duck());//--Composition Adapter
+                        animalAdapter = new DuckAnimalAdapter(new Duck());//--Composition Adapter
                         break;
                     default:
                         canContinue = false;
@@ -35,7 +35,7 @@ namespace StructuralPatterns.Adapter
 
                 if (canContinue)
                 {
-                    Console.WriteLine("\n " + "Animal - " + animalAdapter.AnimalType() + ", Noise - " + animalAdapter.MakeNoise() + ", Moves - " + animalAdapter.Movement() + " \n");
+                    Console.WriteLine("\n " + "Animal - " + animalAdapter.AnimalType() + ", Noise - " + animalAdapter.Speak() + ", Moves - " + animalAdapter.Move() + " \n");
                 }
                 else
                 {

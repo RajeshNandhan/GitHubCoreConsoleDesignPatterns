@@ -2,9 +2,9 @@
 {
     internal interface IAnimalAdapter
     {
-        string Movement();
+        string Move();
 
-        string MakeNoise();
+        string Speak();
 
         string AnimalType();
     }

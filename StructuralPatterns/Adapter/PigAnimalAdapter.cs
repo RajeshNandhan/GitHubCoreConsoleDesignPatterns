@@ -1,13 +1,13 @@
 ﻿namespace StructuralPatterns.Adapter
 {
-    internal class PigConcreteAnimalAdapter : Pig, IAnimalAdapter
+    internal class PigAnimalAdapter : Pig, IAnimalAdapter
     {
-        public string MakeNoise()
+        public string Speak()
         {
             return this.Grunt();
         }
 
-        public string Movement()
+        public string Move()
         {
             return this.Walk();
         }
