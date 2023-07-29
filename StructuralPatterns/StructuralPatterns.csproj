@@ -43,6 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\AdapterClient.cs" />
+    <Compile Include="Adapter\Duck.cs" />
+    <Compile Include="Adapter\DuckConcreteAnimalAdapter.cs" />
+    <Compile Include="Adapter\IAnimalAdapter.cs" />
+    <Compile Include="Adapter\Lion.cs" />
+    <Compile Include="Adapter\LionConcreteAnimalAdapter.cs" />
+    <Compile Include="Adapter\Pig.cs" />
+    <Compile Include="Adapter\PigConcreteAnimalAdapter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -50,7 +58,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Adapter\" />
     <Folder Include="Composite\" />
     <Folder Include="Decorator\" />
     <Folder Include="Facade\" />

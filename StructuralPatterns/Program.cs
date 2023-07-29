@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using StructuralPatterns.Adapter;
 
 namespace StructuralPatterns
 {
@@ -10,6 +6,12 @@ namespace StructuralPatterns
     {
         static void Main(string[] args)
         {
+            AdapterClientTest();
+        }
+
+        private static void AdapterClientTest()
+        {
+            AdapterClient.TestMethod();
         }
     }
 }
