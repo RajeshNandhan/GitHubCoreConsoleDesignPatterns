@@ -45,21 +45,31 @@
   <ItemGroup>
     <Compile Include="Adapter\AdapterClient.cs" />
     <Compile Include="Adapter\Duck.cs" />
-    <Compile Include="Adapter\DuckConcreteAnimalAdapter.cs" />
+    <Compile Include="Adapter\DuckAnimalAdapter.cs" />
     <Compile Include="Adapter\IAnimalAdapter.cs" />
     <Compile Include="Adapter\Lion.cs" />
-    <Compile Include="Adapter\LionConcreteAnimalAdapter.cs" />
+    <Compile Include="Adapter\LionAnimalAdapter.cs" />
     <Compile Include="Adapter\Pig.cs" />
-    <Compile Include="Adapter\PigConcreteAnimalAdapter.cs" />
+    <Compile Include="Adapter\PigAnimalAdapter.cs" />
+    <Compile Include="Decorator\AbstractProductDecorator.cs" />
+    <Compile Include="Decorator\DecoratorClient.cs" />
+    <Compile Include="Decorator\KeyboardAccessoryProductDecorator.cs" />
+    <Compile Include="Decorator\IProduct.cs" />
+    <Compile Include="Decorator\ComputerProduct.cs" />
+    <Compile Include="Decorator\IPodProduct.cs" />
+    <Compile Include="Decorator\LaptopProduct.cs" />
+    <Compile Include="Decorator\MouseAccessoryProductDecorator.cs" />
+    <Compile Include="Decorator\MobileProduct.cs" />
+    <Compile Include="Decorator\DeviceCoverAccessoryProductDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Composite\" />
-    <Folder Include="Decorator\" />
     <Folder Include="Facade\" />
     <Folder Include="Flyweight\" />
     <Folder Include="Proxy\" />
