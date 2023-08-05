@@ -68,6 +68,11 @@
     <Compile Include="Facade\ProductPurchaseFacade.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\IProductBussinessLayer.cs" />
+    <Compile Include="Proxy\Product.cs" />
+    <Compile Include="Proxy\ProxyClient.cs" />
+    <Compile Include="Proxy\ProxyProductBussinessLayer.cs" />
+    <Compile Include="Proxy\RealProductBussinessLayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -76,7 +81,6 @@
   <ItemGroup>
     <Folder Include="Composite\" />
     <Folder Include="Flyweight\" />
-    <Folder Include="Proxy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

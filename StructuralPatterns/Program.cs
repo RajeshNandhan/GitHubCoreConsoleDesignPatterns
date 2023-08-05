@@ -1,6 +1,7 @@
 ﻿using StructuralPatterns.Adapter;
 using StructuralPatterns.Decorator;
 using StructuralPatterns.Facade;
+using StructuralPatterns.Proxy;
 
 namespace StructuralPatterns
 {
@@ -10,7 +11,8 @@ namespace StructuralPatterns
         {
             //AdapterClientTest();
             //DecoratorClientTest();
-            FacadeClientTest();
+            //FacadeClientTest();
+            ProxyClientTest();
         }
 
         private static void AdapterClientTest()
@@ -27,5 +29,11 @@ namespace StructuralPatterns
         {
             FacadeClient.TestMethod();
         }
+
+        private static void ProxyClientTest()
+        {
+            ProxyClient.TestMethod();
+        }
+        
     }
 }
