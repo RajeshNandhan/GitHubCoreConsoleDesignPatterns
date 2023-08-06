@@ -51,6 +51,10 @@
     <Compile Include="Adapter\LionAnimalAdapter.cs" />
     <Compile Include="Adapter\Pig.cs" />
     <Compile Include="Adapter\PigAnimalAdapter.cs" />
+    <Compile Include="Composite\CompositeClient.cs" />
+    <Compile Include="Composite\ITaskActionComponent.cs" />
+    <Compile Include="Composite\ProjectComposite.cs" />
+    <Compile Include="Composite\StoryLeafItem.cs" />
     <Compile Include="Decorator\AbstractProductDecorator.cs" />
     <Compile Include="Decorator\DecoratorClient.cs" />
     <Compile Include="Decorator\KeyboardAccessoryProductDecorator.cs" />
@@ -79,7 +83,6 @@
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Composite\" />
     <Folder Include="Flyweight\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
