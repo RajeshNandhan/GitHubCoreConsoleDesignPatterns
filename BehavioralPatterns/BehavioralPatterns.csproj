@@ -45,6 +45,24 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy\CameraInBuiltBehaviour.cs" />
+    <Compile Include="Strategy\CameraNoBehaviour.cs" />
+    <Compile Include="Strategy\ICameraStrategy.cs" />
+    <Compile Include="Strategy\IProductType.cs" />
+    <Compile Include="Strategy\KeyboardNormalBehaviour.cs" />
+    <Compile Include="Strategy\KeyboardSmallBehaviour.cs" />
+    <Compile Include="Strategy\KeyboardSpecialBehaviour.cs" />
+    <Compile Include="Strategy\MonitorLCDBehaviour.cs" />
+    <Compile Include="Strategy\MonitorLEDBehaviour.cs" />
+    <Compile Include="Strategy\MouseExternalBehaviour.cs" />
+    <Compile Include="Strategy\IKeyboardStrategy.cs" />
+    <Compile Include="Strategy\IMonitorStrategy.cs" />
+    <Compile Include="Strategy\IMouseStrategy.cs" />
+    <Compile Include="Strategy\MouseInBuiltBehaviour.cs" />
+    <Compile Include="Strategy\MouseNoBehaviour.cs" />
+    <Compile Include="Strategy\Product.cs" />
+    <Compile Include="Strategy\ProductTypeBehaviour.cs" />
+    <Compile Include="Strategy\StrategyClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -58,7 +76,6 @@
     <Folder Include="Memento\" />
     <Folder Include="Observer\" />
     <Folder Include="State\" />
-    <Folder Include="Strategy\" />
     <Folder Include="TemplateMethod\" />
     <Folder Include="Visitor\" />
   </ItemGroup>
