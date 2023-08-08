@@ -70,6 +70,12 @@
     <Compile Include="Facade\Laptop.cs" />
     <Compile Include="Facade\Mobile.cs" />
     <Compile Include="Facade\ProductPurchaseFacade.cs" />
+    <Compile Include="Flyweight\AppleLaptopConcreteFlyweight.cs" />
+    <Compile Include="Flyweight\FlyweightClient.cs" />
+    <Compile Include="Flyweight\HPLaptopConcreteFlyweight.cs" />
+    <Compile Include="Flyweight\LaptopFlyweight.cs" />
+    <Compile Include="Flyweight\LaptopFactory.cs" />
+    <Compile Include="Flyweight\LenovoLaptopConcreteFlyweight.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proxy\IProductBussinessLayer.cs" />
@@ -82,8 +88,6 @@
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Flyweight\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
