@@ -43,6 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Observer-pushpush\BBCNews2.cs" />
+    <Compile Include="Observer-pushpush\IWeatherObservable2.cs" />
+    <Compile Include="Observer-pushpush\IWeatherObserver2.cs" />
+    <Compile Include="Observer-pushpush\MobileWeatherApp2.cs" />
+    <Compile Include="Observer-pushpush\NDTVNews2.cs" />
+    <Compile Include="Observer-pushpush\ObserverClient2.cs" />
+    <Compile Include="Observer-pushpush\Weather2.cs" />
+    <Compile Include="Observer-pushpush\WeatherStation2.cs" />
+    <Compile Include="Observer\BBCNews.cs" />
+    <Compile Include="Observer\IWeatherObservable.cs" />
+    <Compile Include="Observer\IWeatherObserver.cs" />
+    <Compile Include="Observer\MobileWeatherApp.cs" />
+    <Compile Include="Observer\NDTVNews.cs" />
+    <Compile Include="Observer\ObserverClient.cs" />
+    <Compile Include="Observer\Weather.cs" />
+    <Compile Include="Observer\WeatherStation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy\CameraInBuiltBehaviour.cs" />
@@ -74,7 +90,6 @@
     <Folder Include="Iterator\" />
     <Folder Include="Mediator\" />
     <Folder Include="Memento\" />
-    <Folder Include="Observer\" />
     <Folder Include="State\" />
     <Folder Include="TemplateMethod\" />
     <Folder Include="Visitor\" />

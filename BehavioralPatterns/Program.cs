@@ -1,4 +1,6 @@
-﻿using BehavioralPatterns.Strategy;
+﻿using BehavioralPatterns.Observer;
+using BehavioralPatterns.Observer2;
+using BehavioralPatterns.Strategy;
 
 namespace BehavioralPatterns
 {
@@ -6,12 +8,19 @@ namespace BehavioralPatterns
     {
         static void Main(string[] args)
         {
-            StrategyClientTest();
+            //StrategyClientTest();
+            ObserverClientTest();
         }
 
         private static void StrategyClientTest()
         {
             StrategyClient.TestMethod();
+        }
+
+        private static void ObserverClientTest()
+        {
+            //ObserverClient.TestMethod();
+            ObserverClient2.TestMethod();
         }
     }
 }

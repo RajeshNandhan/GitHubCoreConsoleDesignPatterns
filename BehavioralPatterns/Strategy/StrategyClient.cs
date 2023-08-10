@@ -2,6 +2,9 @@
 
 namespace BehavioralPatterns.Strategy
 {
+    /// <summary>
+    /// algorithm = statatergy = behaviour
+    /// </summary>
     internal class StrategyClient
     {
         public static void BuyProduct()
