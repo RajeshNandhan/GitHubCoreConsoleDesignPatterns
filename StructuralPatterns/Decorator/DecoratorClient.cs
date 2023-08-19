@@ -87,7 +87,6 @@ namespace StructuralPatterns.Decorator
             return computerProductDeviceCoverDecorated;
         }
 
-
         public static void TestMethod()
         {
             DecoratorClientTest();

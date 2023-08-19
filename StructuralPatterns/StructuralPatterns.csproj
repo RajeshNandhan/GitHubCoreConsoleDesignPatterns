@@ -51,6 +51,17 @@
     <Compile Include="Adapter\LionAnimalAdapter.cs" />
     <Compile Include="Adapter\Pig.cs" />
     <Compile Include="Adapter\PigAnimalAdapter.cs" />
+    <Compile Include="Bridge\ArtistProduct.cs" />
+    <Compile Include="Bridge\ArtistProductAdapter.cs" />
+    <Compile Include="Bridge\BookProduct.cs" />
+    <Compile Include="Bridge\BookProductAdapter.cs" />
+    <Compile Include="Bridge\BridgeClient.cs" />
+    <Compile Include="Bridge\ComputerApplicationView.cs" />
+    <Compile Include="Bridge\IProductAdapter.cs" />
+    <Compile Include="Bridge\IView.cs" />
+    <Compile Include="Bridge\LaptopProduct.cs" />
+    <Compile Include="Bridge\LaptopProductAdapter.cs" />
+    <Compile Include="Bridge\MobileApplicationView.cs" />
     <Compile Include="Composite\CompositeClient.cs" />
     <Compile Include="Composite\ITaskActionComponent.cs" />
     <Compile Include="Composite\ProjectComposite.cs" />

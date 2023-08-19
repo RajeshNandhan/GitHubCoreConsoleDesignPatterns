@@ -75,7 +75,7 @@
     <Compile Include="Strategy\CameraInBuiltBehaviour.cs" />
     <Compile Include="Strategy\CameraNoBehaviour.cs" />
     <Compile Include="Strategy\ICameraStrategy.cs" />
-    <Compile Include="Strategy\IProductType.cs" />
+    <Compile Include="Strategy\IProductTypeStrategy.cs" />
     <Compile Include="Strategy\KeyboardNormalBehaviour.cs" />
     <Compile Include="Strategy\KeyboardSmallBehaviour.cs" />
     <Compile Include="Strategy\KeyboardSpecialBehaviour.cs" />

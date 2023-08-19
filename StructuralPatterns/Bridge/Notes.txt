@@ -1,0 +1,27 @@
+﻿
+
+bridge pattern
+cartsian product
+
+Effectively, the Adapter pattern is useful when you have existing code, be it third party, or in-house, but out of your control, or otherwise not changeable to quite meet the interface you need it to. For instance, we have a SuperWeaponsArray which can control a fine array of doomsday devices.
+
+public class SuperWeaponsArray {
+  /*...*/
+
+  public void destroyWorld() {
+    for (Weapon w : armedWeapons) {
+      w.fire();
+    }
+  }
+}
+Great. Except we realize we have a nuclear device in our arsenal that vastly predates the conversion to the Weapon interface. But we'd really like it to work here... so what do we do... wedge it in!
+
+NukeWeaponsAdaptor - based off of our Nuke class, but exporting the Weapon interface. Sweet, now we can surely destroy the world. It seems like bit of a kludge, but it makes things work.
+
+The Bridge pattern is something you implement up front - if you know you have two orthogonal hierarchies, it provides a way to decouple the interface and the implementation in such a way that you don't get an insane number of classes. Let's say you have:
+
+MemoryMappedFile and DirectReadFile types of file objects. Let's say you want to be able to read files from various sources (Maybe Linux vs. Windows implementations, etc.). Bridge helps you avoid winding up with:
+
+MemoryMappedWindowsFile MemoryMappedLinuxFile DirectReadWindowsFile DirectReadLinuxFile
+
+ 

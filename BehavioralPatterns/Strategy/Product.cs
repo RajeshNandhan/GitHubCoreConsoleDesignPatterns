@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BehavioralPatterns.Strategy
+﻿namespace BehavioralPatterns.Strategy
 {
     internal class Product
     {

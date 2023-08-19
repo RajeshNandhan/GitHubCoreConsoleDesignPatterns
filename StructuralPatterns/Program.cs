@@ -1,4 +1,5 @@
 ﻿using StructuralPatterns.Adapter;
+using StructuralPatterns.Bridge;
 using StructuralPatterns.Composite;
 using StructuralPatterns.Decorator;
 using StructuralPatterns.Facade;
@@ -16,7 +17,8 @@ namespace StructuralPatterns
             //FacadeClientTest();
             //ProxyClientTest();
             //CompositeClientTest();
-            FlyweightClientTest();
+            //FlyweightClientTest();
+            BridgeClientTest();
         }
 
         private static void AdapterClientTest()
@@ -47,6 +49,10 @@ namespace StructuralPatterns
         private static void FlyweightClientTest()
         {
             FlyweightClient.TestMethod();
+        }
+        private static void BridgeClientTest()
+        {
+            BridgeClient.TestMethod();
         }
     }
 }
