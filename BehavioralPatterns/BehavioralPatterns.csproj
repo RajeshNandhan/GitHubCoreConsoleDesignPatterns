@@ -53,6 +53,7 @@
     <Compile Include="Command\ProductInventoryRepository.cs" />
     <Compile Include="Command\ShoppingCartCommand.cs" />
     <Compile Include="Command\ShoppingCartRepository.cs" />
+    <Compile Include="Command\Test2\OnlineShoppingInvoker2.cs" />
     <Compile Include="Observer-pushpush\BBCNews2.cs" />
     <Compile Include="Observer-pushpush\IWeatherObservable2.cs" />
     <Compile Include="Observer-pushpush\IWeatherObserver2.cs" />
