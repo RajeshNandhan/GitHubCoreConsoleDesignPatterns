@@ -1,8 +1,9 @@
-﻿using System;
+﻿using BehavioralPatterns.Observer.Extra;
+using System;
 
 namespace BehavioralPatterns.Observer
 {
-    internal class NDTVNews : IWeatherObserver
+    internal class NDTVNews : IWeatherObserver, IDisplayMessage
     {
         private readonly WeatherStation weatherStation;
         private Weather weather;
@@ -15,6 +16,11 @@ namespace BehavioralPatterns.Observer
         public void UpdateObserversWeatherChanges()
         {
             weather = weatherStation.GetWeatherChanages();
+            showMessage(weather);
+        }
+
+        public void showMessage(Weather weather)
+        {
             string weatherUpdate = $"NDTV Weather App update - {weather.ToWeatherString()}";
             Console.WriteLine(weatherUpdate);
         }

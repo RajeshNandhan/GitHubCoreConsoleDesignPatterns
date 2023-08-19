@@ -1,8 +1,9 @@
-﻿using System;
+﻿using BehavioralPatterns.Observer.Extra;
+using System;
 
 namespace BehavioralPatterns.Observer
 {
-    internal class MobileWeatherApp : IWeatherObserver
+    internal class MobileWeatherApp : IWeatherObserver, IDisplayMessage
     {
         private readonly WeatherStation weatherStation;
         private Weather weather;
@@ -16,8 +17,11 @@ namespace BehavioralPatterns.Observer
         {
             //PULL THE WEATEHR UPDATE
             weather = weatherStation.GetWeatherChanages();
+            showMessage(weather);
+        }
 
-
+        public void showMessage(Weather weather)
+        {
             string weatherUpdate = $"Mobile Weather App update - {weather.ToWeatherString()}";
             Console.WriteLine(weatherUpdate);
         }

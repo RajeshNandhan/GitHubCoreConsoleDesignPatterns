@@ -1,8 +1,9 @@
-﻿using System;
+﻿using BehavioralPatterns.Observer.Extra;
+using System;
 
 namespace BehavioralPatterns.Observer
 {
-    internal class BBCNews : IWeatherObserver
+    internal class BBCNews : IWeatherObserver, IDisplayMessage
     {
         private readonly WeatherStation weatherStation;
         private Weather weather;
@@ -12,11 +13,16 @@ namespace BehavioralPatterns.Observer
             this.weatherStation = weatherStation;
         }
 
+        public void showMessage(Weather weather)
+        {
+            string weatherUpdate = $"BBC Weather update - {weather.ToWeatherString()}";
+            Console.WriteLine(weatherUpdate);
+        }
+
         public void UpdateObserversWeatherChanges()
         {
             weather = weatherStation.GetWeatherChanages();
-            string weatherUpdate = $"BBC Weather update - {weather.ToWeatherString()}";
-            Console.WriteLine(weatherUpdate);
+            showMessage(weather);
         }
     }
 }

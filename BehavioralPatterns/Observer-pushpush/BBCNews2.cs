@@ -6,7 +6,6 @@ namespace BehavioralPatterns.Observer2
     {
         private Weather2 weather;
 
-
         //WEATHER DATA PUSHED FROM STATION 
         public void UpdateObserversWeatherChanges(Weather2 weather)
         {
