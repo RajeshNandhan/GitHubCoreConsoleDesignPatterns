@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BehavioralPatterns.Observer;
+using System;
 
 namespace BehavioralPatterns.Observer2
 {
@@ -22,7 +23,7 @@ namespace BehavioralPatterns.Observer2
             {
                 Random rand = new Random();
                 var currentTemperature = rand.Next(20, 40);
-                var weather = new Weather2(currentTemperature);
+                var weather = new Weather(currentTemperature);
 
                 /******** Pattern Testing *********/
 

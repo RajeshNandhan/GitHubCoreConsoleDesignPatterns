@@ -1,4 +1,4 @@
-﻿namespace BehavioralPatterns.Observer.Extra
+﻿namespace BehavioralPatterns.Observer
 {
     internal interface IDisplayMessage
     {

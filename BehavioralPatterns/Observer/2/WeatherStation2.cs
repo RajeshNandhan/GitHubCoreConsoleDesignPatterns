@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using BehavioralPatterns.Observer;
+using System.Collections.Generic;
 
 namespace BehavioralPatterns.Observer2
 {
@@ -8,7 +9,7 @@ namespace BehavioralPatterns.Observer2
     internal class WeatherStation2 : IWeatherObservable2
     {
         private List<IWeatherObserver2> weatherObservers;
-        Weather2 weather;
+        Weather weather;
 
         public WeatherStation2()
         {
@@ -34,7 +35,7 @@ namespace BehavioralPatterns.Observer2
             }
         }
 
-        public void SetWeatherChanages(Weather2 weather)
+        public void SetWeatherChanages(Weather weather)
         {
             this.weather = weather;
         }

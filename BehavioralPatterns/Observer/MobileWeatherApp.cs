@@ -1,5 +1,4 @@
-﻿using BehavioralPatterns.Observer.Extra;
-using System;
+﻿using System;
 
 namespace BehavioralPatterns.Observer
 {
