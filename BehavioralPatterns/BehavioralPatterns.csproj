@@ -90,6 +90,10 @@
     <Compile Include="Strategy\Product.cs" />
     <Compile Include="Strategy\ProductTypeBehaviour.cs" />
     <Compile Include="Strategy\StrategyClient.cs" />
+    <Compile Include="TemplateMethod\Product.cs" />
+    <Compile Include="TemplateMethod\ShoppingCartRepository.cs" />
+    <Compile Include="TemplateMethod\ShoppingCartTemplete.cs" />
+    <Compile Include="TemplateMethod\TemplateMethodClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -101,7 +105,6 @@
     <Folder Include="Mediator\" />
     <Folder Include="Memento\" />
     <Folder Include="State\" />
-    <Folder Include="TemplateMethod\" />
     <Folder Include="Visitor\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

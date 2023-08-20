@@ -2,6 +2,7 @@
 using BehavioralPatterns.Observer;
 using BehavioralPatterns.Observer2;
 using BehavioralPatterns.Strategy;
+using BehavioralPatterns.TemplateMethod;
 
 namespace BehavioralPatterns
 {
@@ -11,7 +12,8 @@ namespace BehavioralPatterns
         {
             //StrategyClientTest();
             //ObserverClientTest();
-            CommandClientTest();
+            //CommandClientTest();
+            TemplateMethodClientTest();
         }
 
         private static void StrategyClientTest()
@@ -27,8 +29,12 @@ namespace BehavioralPatterns
 
         private static void CommandClientTest()
         {
-            //ObserverClient.TestMethod();
             CommandClient.TestMethod();
         }
+        private static void TemplateMethodClientTest()
+        {
+            TemplateMethodClient.TestMethod();
+        }
+        
     }
 }
