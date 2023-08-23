@@ -54,6 +54,14 @@
     <Compile Include="Command\ShoppingCartCommand.cs" />
     <Compile Include="Command\ShoppingCartRepository.cs" />
     <Compile Include="Command\2\OnlineShoppingInvoker2.cs" />
+    <Compile Include="Iterator\2\WeatherIterable2.cs" />
+    <Compile Include="Iterator\2\WeatherIterator2.cs" />
+    <Compile Include="Iterator\IteratorClient.cs" />
+    <Compile Include="Iterator\IWeatherIterable.cs" />
+    <Compile Include="Iterator\IWeatherIterator.cs" />
+    <Compile Include="Iterator\Weather.cs" />
+    <Compile Include="Iterator\WeatherIterable.cs" />
+    <Compile Include="Iterator\WeatherIterator.cs" />
     <Compile Include="Observer\2\BBCNews2.cs" />
     <Compile Include="Observer\2\IWeatherObservable2.cs" />
     <Compile Include="Observer\2\IWeatherObserver2.cs" />
@@ -101,7 +109,6 @@
   <ItemGroup>
     <Folder Include="ChainofResponsibility\" />
     <Folder Include="Interpreter\" />
-    <Folder Include="Iterator\" />
     <Folder Include="Mediator\" />
     <Folder Include="Memento\" />
     <Folder Include="State\" />
