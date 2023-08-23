@@ -2,12 +2,12 @@
 
 namespace BehavioralPatterns.Observer
 {
-    internal class BBCNews : IWeatherObserver, IDisplayMessage
+    internal class BBCNewsWeatherObserver : IWeatherObserver, IDisplayMessage
     {
-        private readonly WeatherStation weatherStation;
+        private readonly WeatherStationWeatherObservable weatherStation;
         private Weather weather;
 
-        public BBCNews(WeatherStation weatherStation)
+        public BBCNewsWeatherObserver(WeatherStationWeatherObservable weatherStation)
         {
             this.weatherStation = weatherStation;
         }

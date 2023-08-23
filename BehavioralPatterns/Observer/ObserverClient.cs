@@ -8,11 +8,11 @@ namespace BehavioralPatterns.Observer
         {
             bool canContinue;
 
-            WeatherStation weatherStation = new WeatherStation();
+            WeatherStationWeatherObservable weatherStation = new WeatherStationWeatherObservable();
 
-            BBCNews bBCNews = new BBCNews(weatherStation);
-            NDTVNews nDTVNews = new NDTVNews(weatherStation);
-            MobileWeatherApp mobileWeatherApp = new MobileWeatherApp(weatherStation);
+            BBCNewsWeatherObserver bBCNews = new BBCNewsWeatherObserver(weatherStation);
+            NDTVNewsWeatherObserver nDTVNews = new NDTVNewsWeatherObserver(weatherStation);
+            MobileWeatherAppWeatherObserver mobileWeatherApp = new MobileWeatherAppWeatherObserver(weatherStation);
 
             weatherStation.AddObservers(bBCNews);
             weatherStation.AddObservers(nDTVNews);

@@ -3,7 +3,7 @@ using System;
 
 namespace BehavioralPatterns.Observer2
 {
-    internal class NDTVNews2 : IWeatherObserver2, IDisplayMessage
+    internal class NDTVNews2WeatherObserver : IWeatherObserver2, IDisplayMessage
     {
         public void showMessage(Weather weather)
         {

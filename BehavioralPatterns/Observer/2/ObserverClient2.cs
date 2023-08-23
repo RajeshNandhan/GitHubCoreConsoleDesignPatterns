@@ -9,11 +9,11 @@ namespace BehavioralPatterns.Observer2
         {
             bool canContinue;
 
-            WeatherStation2 weatherStation = new WeatherStation2();
+            WeatherStation2WeatherObservable weatherStation = new WeatherStation2WeatherObservable();
 
-            BBCNews2 bBCNews = new BBCNews2();
-            NDTVNews2 nDTVNews = new NDTVNews2();
-            MobileWeatherApp2 mobileWeatherApp = new MobileWeatherApp2();
+            BBCNews2WeatherObserver bBCNews = new BBCNews2WeatherObserver();
+            NDTVNews2WeatherObserver nDTVNews = new NDTVNews2WeatherObserver();
+            MobileWeatherApp2WeatherObserver mobileWeatherApp = new MobileWeatherApp2WeatherObserver();
 
             weatherStation.AddObservers(bBCNews);
             weatherStation.AddObservers(nDTVNews);

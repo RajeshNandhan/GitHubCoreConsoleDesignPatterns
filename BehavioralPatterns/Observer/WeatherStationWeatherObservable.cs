@@ -5,12 +5,12 @@ namespace BehavioralPatterns.Observer
     /// <summary>
     /// PUSH PULL MODEL
     /// </summary>
-    internal class WeatherStation : IWeatherObservable
+    internal class WeatherStationWeatherObservable : IWeatherObservable
     {
         private List<IWeatherObserver> weatherObservers;
         Weather weather;
 
-        public WeatherStation()
+        public WeatherStationWeatherObservable()
         {
             weatherObservers = new List<IWeatherObserver>();
         }

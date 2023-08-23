@@ -2,25 +2,26 @@
 
 namespace BehavioralPatterns.Observer
 {
-    internal class NDTVNews : IWeatherObserver, IDisplayMessage
+    internal class MobileWeatherAppWeatherObserver : IWeatherObserver, IDisplayMessage
     {
-        private readonly WeatherStation weatherStation;
+        private readonly WeatherStationWeatherObservable weatherStation;
         private Weather weather;
 
-        public NDTVNews(WeatherStation weatherStation)
+        public MobileWeatherAppWeatherObserver(WeatherStationWeatherObservable weatherStation)
         {
             this.weatherStation = weatherStation;
         }
 
         public void UpdateObserversWeatherChanges()
         {
+            //PULL THE WEATEHR UPDATE
             weather = weatherStation.GetWeatherChanages();
             showMessage(weather);
         }
 
         public void showMessage(Weather weather)
         {
-            string weatherUpdate = $"NDTV Weather App update - {weather.ToWeatherString()}";
+            string weatherUpdate = $"Mobile Weather App update - {weather.ToWeatherString()}";
             Console.WriteLine(weatherUpdate);
         }
     }

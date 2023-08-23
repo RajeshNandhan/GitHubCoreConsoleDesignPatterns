@@ -3,14 +3,15 @@ using System;
 
 namespace BehavioralPatterns.Observer2
 {
-    internal class MobileWeatherApp2 : IWeatherObserver2, IDisplayMessage
+    internal class BBCNews2WeatherObserver : IWeatherObserver2, IDisplayMessage
     {
         public void showMessage(Weather weather)
         {
-            string weatherUpdate = $"Mobile Weather App update - {weather.ToWeatherString()}";
+            string weatherUpdate = $"BBC Weather update - {weather.ToWeatherString()}";
             Console.WriteLine(weatherUpdate);
         }
 
+        //WEATHER DATA PUSHED FROM STATION 
         public void UpdateObserversWeatherChanges(Weather weather)
         {
             showMessage(weather);
