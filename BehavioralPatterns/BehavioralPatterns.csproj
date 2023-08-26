@@ -80,6 +80,13 @@
     <Compile Include="Observer\WeatherStationWeatherObservable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\CloseGateState.cs" />
+    <Compile Include="State\IGate.cs" />
+    <Compile Include="State\IGateState.cs" />
+    <Compile Include="State\MetroGate.cs" />
+    <Compile Include="State\OpenGateState.cs" />
+    <Compile Include="State\ProcessingGateState.cs" />
+    <Compile Include="State\StateClient.cs" />
     <Compile Include="Strategy\CameraInBuiltBehaviour.cs" />
     <Compile Include="Strategy\CameraNoBehaviour.cs" />
     <Compile Include="Strategy\ICameraStrategy.cs" />
@@ -111,8 +118,10 @@
     <Folder Include="Interpreter\" />
     <Folder Include="Mediator\" />
     <Folder Include="Memento\" />
-    <Folder Include="State\" />
     <Folder Include="Visitor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Command\Note.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

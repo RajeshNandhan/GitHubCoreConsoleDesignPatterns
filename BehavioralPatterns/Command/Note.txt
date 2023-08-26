@@ -1,0 +1,2 @@
+﻿in order, pre order, post order traversal
+commad query seperation

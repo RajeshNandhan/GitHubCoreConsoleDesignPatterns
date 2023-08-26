@@ -2,6 +2,7 @@
 using BehavioralPatterns.Iterator;
 using BehavioralPatterns.Observer;
 using BehavioralPatterns.Observer2;
+using BehavioralPatterns.State;
 using BehavioralPatterns.Strategy;
 using BehavioralPatterns.TemplateMethod;
 
@@ -15,7 +16,8 @@ namespace BehavioralPatterns
             //ObserverClientTest();
             //CommandClientTest();
             //TemplateMethodClientTest();
-            IteratorClientTest();
+            //IteratorClientTest();
+            StateClientTest();
         }
 
         private static void StrategyClientTest()
@@ -33,13 +35,20 @@ namespace BehavioralPatterns
         {
             CommandClient.TestMethod();
         }
+
         private static void TemplateMethodClientTest()
         {
             TemplateMethodClient.TestMethod();
         }
+
         private static void IteratorClientTest()
         {
             IteratorClient.TestMethod();
+        }
+
+        private static void StateClientTest()
+        {
+            StateClient.TestMethod();
         }
     }
 }
