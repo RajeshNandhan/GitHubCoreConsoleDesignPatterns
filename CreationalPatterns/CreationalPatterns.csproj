@@ -86,6 +86,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="CreationalPatternsClassDiagram.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Builder\Note.txt" />

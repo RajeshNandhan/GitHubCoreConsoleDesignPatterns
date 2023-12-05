@@ -1,0 +1,21 @@
+https://www.youtube.com/watch?v=8hly31xKli0&t=4s
+
+https://www.simplilearn.com/tutorials/data-structure-tutorial/linear-search-algorithm
+
+
+
+GithHub
+
+https://github.com/pncsoares/search-algorithms/blob/main/SearchAlgorithms/SearchAlgorithms/BinarySearch/README.md
+
+https://github.com/TheAlgorithms/C-Sharp/blob/master/Algorithms/Search/LinearSearcher.cs
+
+
+
+DIfferent Language COdes
+
+https://teamtreehouse.com/library/introduction-to-algorithms/binary-search-implementations
+
+
+
+

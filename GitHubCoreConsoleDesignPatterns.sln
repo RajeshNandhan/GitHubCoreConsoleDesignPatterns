@@ -11,10 +11,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralPatterns", "Struc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{78C246AF-79C8-4115-A226-D08190164EE8}"
 	ProjectSection(SolutionItems) = preProject
+		BinarySearchTree.txt = BinarySearchTree.txt
+		Notes\DataStructure.txt = Notes\DataStructure.txt
+		Notes\DesignPatternsLinks.txt = Notes\DesignPatternsLinks.txt
 		Notes\Git.txt = Notes\Git.txt
-		Notes\Links.txt = Notes\Links.txt
 		Notes\PatternsDescription.txt = Notes\PatternsDescription.txt
+		Notes\SearchAlgorithmsLinks.txt = Notes\SearchAlgorithmsLinks.txt
+		Notes\SortAlgorithmsLinks.txt = Notes\SortAlgorithmsLinks.txt
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "Algorithms\Algorithms.csproj", "{DDE8831C-BF47-4792-91DC-764B99C533A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +40,10 @@ Global
 		{755BCF91-96C9-4995-97BE-4BBA1E39197C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{755BCF91-96C9-4995-97BE-4BBA1E39197C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{755BCF91-96C9-4995-97BE-4BBA1E39197C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE8831C-BF47-4792-91DC-764B99C533A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE8831C-BF47-4792-91DC-764B99C533A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE8831C-BF47-4792-91DC-764B99C533A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE8831C-BF47-4792-91DC-764B99C533A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

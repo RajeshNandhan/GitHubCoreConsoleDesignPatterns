@@ -1,0 +1,32 @@
+SORTING ALGORITHIM
+
+https://www.c-sharpcorner.com/UploadFile/3d39b4/bubble-sort-in-C-Sharp/
+
+
+https://www.youtube.com/watch?v=i-SKeOcBwko&list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U&index=4
+
+
+https://github.com/exceptionnotfound/SortExtravaganzaCSharp/tree/master/BubbleSort
+
+
+https://github.com/gwtw/csharp-sorting/blob/master/src/BubbleSort.cs
+
+
+https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm
+
+
+https://dotnettutorials.net/lesson/bubble-sort-algorithm-in-csharp/
+
+
+
+to do
+
+timecomplexity is wrong for outer loop
+
+timecomplexity should be i instead n and redifins
+
+grab images for sorting possibly flow charts
+
+read other concepts in tutorialp oints
+
+https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm

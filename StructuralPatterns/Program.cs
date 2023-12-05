@@ -12,46 +12,12 @@ namespace StructuralPatterns
     {
         static void Main(string[] args)
         {
-            //AdapterClientTest();
-            //DecoratorClientTest();
-            //FacadeClientTest();
-            //ProxyClientTest();
-            //CompositeClientTest();
-            //FlyweightClientTest();
-            BridgeClientTest();
-        }
-
-        private static void AdapterClientTest()
-        {
-            AdapterClient.TestMethod();
-        }
-
-        private static void DecoratorClientTest()
-        {
-            DecoratorClient.TestMethod();
-        }
-
-        private static void FacadeClientTest()
-        {
-            FacadeClient.TestMethod();
-        }
-
-        private static void ProxyClientTest()
-        {
-            ProxyClient.TestMethod();
-        }
-
-        private static void CompositeClientTest()
-        {
-            CompositeClient.TestMethod();
-        }
-
-        private static void FlyweightClientTest()
-        {
-            FlyweightClient.TestMethod();
-        }
-        private static void BridgeClientTest()
-        {
+            //AdapterClient.TestMethod();
+            //DecoratorClient.TestMethod();
+            //FacadeClient.TestMethod();
+            //ProxyClient.TestMethod();
+            //CompositeClient.TestMethod();
+            //FlyweightClient.TestMethod();
             BridgeClient.TestMethod();
         }
     }

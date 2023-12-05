@@ -12,42 +12,12 @@ namespace BehavioralPatterns
     {
         static void Main(string[] args)
         {
-            //StrategyClientTest();
-            //ObserverClientTest();
-            //CommandClientTest();
-            //TemplateMethodClientTest();
-            //IteratorClientTest();
-            StateClientTest();
-        }
-
-        private static void StrategyClientTest()
-        {
-            StrategyClient.TestMethod();
-        }
-
-        private static void ObserverClientTest()
-        {
-            //ObserverClient.TestMethod();
-            ObserverClient2.TestMethod();
-        }
-
-        private static void CommandClientTest()
-        {
-            CommandClient.TestMethod();
-        }
-
-        private static void TemplateMethodClientTest()
-        {
-            TemplateMethodClient.TestMethod();
-        }
-
-        private static void IteratorClientTest()
-        {
-            IteratorClient.TestMethod();
-        }
-
-        private static void StateClientTest()
-        {
+            //StrategyClient.TestMethod();
+            ////ObserverClient.TestMethod();
+            //ObserverClient2.TestMethod();
+            //CommandClient.TestMethod();
+            //TemplateMethodClient.TestMethod();
+            //IteratorClient.TestMethod();
             StateClient.TestMethod();
         }
     }
