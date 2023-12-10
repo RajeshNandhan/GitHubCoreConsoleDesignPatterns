@@ -3,7 +3,7 @@
     /// <summary>
     /// BinarySearchTreeRecursiveNumber basically creates and implements BinarySearchTreeNode logics through RECURSIVE way
     /// </summary>
-    internal class BinarySearchTreeRecursiveNumber : IBinarySearchTreeNumber
+    internal class BinarySearchTreeRecursiveNumber : IBinaryTreeNumber
     {
         private BinarySearchTreeNode rootNode;
 
@@ -165,9 +165,10 @@
             return minValue;
         }
 
-        public BinarySearchTreeNode Search(int value)
+        public bool Search(int value)
         {
-            return Search(rootNode, value);
+            var node = Search(rootNode, value);
+            return node != null;
         }
 
         private BinarySearchTreeNode Search(BinarySearchTreeNode node, int value)

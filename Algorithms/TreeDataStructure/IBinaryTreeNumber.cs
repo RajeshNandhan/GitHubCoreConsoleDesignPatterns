@@ -1,6 +1,6 @@
-﻿namespace Algorithms.TreeDataStructure.BinarySearchTree
+﻿namespace Algorithms.TreeDataStructure
 {
-    public interface IBinarySearchTreeNumber
+    public interface IBinaryTreeNumber
     {
         void AddNode(int value);
 
@@ -12,6 +12,6 @@
 
         void DeleteNode(int key);
 
-        BinarySearchTreeNode Search(int value);
+        bool Search(int value);
     }
 }

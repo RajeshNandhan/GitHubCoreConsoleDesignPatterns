@@ -1,17 +1,22 @@
-﻿namespace Algorithms.TreeDataStructure.BinarySearchTree
+﻿using Algorithms.TreeDataStructure.AVLTree;
+using Algorithms.TreeDataStructure.BinarySearchTree;
+
+namespace Algorithms.TreeDataStructure
 {
-    internal class BinarySearchTreeNumberTest
+    internal class BinaryTreeNumberTest
     {
         public static void TestMethod()
         {
-            IBinarySearchTreeNumber x = new BinarySearchTreeRecursiveNumber();
-            //IBinarySearchTreeNumber x = new BinarySearchTreeIterativeNumber();
+            //IBinaryTreeNumber x = new BinarySearchTreeRecursiveNumber();
+            //IBinaryTreeNumber x = new BinarySearchTreeIterativeNumber();
+            IBinaryTreeNumber x = new AVLTreeNumber();
+
             TestMethod_Recursive(x);
 
             Console.ReadKey();
         }
 
-        private static void TestMethod_Recursive(IBinarySearchTreeNumber x)
+        private static void TestMethod_Recursive(IBinaryTreeNumber x)
         {
             /****   Test 1 - ADD NODE  ******/
 
@@ -23,8 +28,7 @@
                 x.AddNode(i);
             }
 
-            //Console.WriteLine($"\n Added Items[{inputList.Count()}] = {inputList.ConvertToString()}");
-            Console.WriteLine($"\n Added Items (SORTED)[{inputList.Count()}] = {inputList.ConvertToStringSortedOrder()}");
+            Console.WriteLine($"\n Input - Added Items (SORTED)[{inputList.Count()}] = {inputList.ConvertToStringSortedOrder()}");
 
 
 
@@ -34,16 +38,15 @@
 
             //var inOrderTraversal = x.GetInOrderTraversal();
 
-            //Console.WriteLine($"\n--- Output - IN Order Traversal [{inOrderTraversal.Count()}]  = {inOrderTraversal.ConvertToString()}");
+            //Console.WriteLine($"\n Output - IN Order Traversal [{inOrderTraversal.Count()}]  = {inOrderTraversal.ConvertToString()}");
 
             //var preOrderTraversal = x.GetPreOrderTraversal();
 
-            //Console.WriteLine($"\n--- Output - PRE Order Traversal [{preOrderTraversal.Count()}]  = {preOrderTraversal.ConvertToString()}");
+            //Console.WriteLine($"\n Output - PRE Order Traversal [{preOrderTraversal.Count()}]  = {preOrderTraversal.ConvertToString()}");
 
             //var postOrderTraversal = x.GetPostOrderTraversal();
 
-            //Console.WriteLine($"\n--- Output - POST Order Traversal [{postOrderTraversal.Count()}]  = {postOrderTraversal.ConvertToString()}");
-
+            ///Console.WriteLine($"\n Output - POST Order Traversal [{postOrderTraversal.Count()}]  = {postOrderTraversal.ConvertToString()}");
 
 
 
@@ -71,11 +74,13 @@
 
             x.DeleteNode(123);
 
+            var numberToDelete = new List<int> { 1, 271, 39, 234, 152, 134, 181, 123 };
             var resultDeleteNode = x.GetInOrderTraversal();
 
-            Console.WriteLine($"\n After DELETING 1, 271, 39, 234, 152, 134, 181, 123 \n --- Output Items [{resultDeleteNode.Count()}]  = {resultDeleteNode.ConvertToString()}");
 
-            var matchFound = resultDeleteNode.SearchNumber(new List<int> { 1, 271, 39, 234, 152, 134, 181, 123 });
+            Console.WriteLine($"\n After DELETING {numberToDelete.ConvertToStringSortedOrder()} \n --- Output Items [{resultDeleteNode.Count()}]  = {resultDeleteNode.ConvertToString()}");
+
+            var matchFound = resultDeleteNode.SearchNumber(numberToDelete);
 
             if (matchFound)
             {
@@ -86,18 +91,25 @@
                 Console.WriteLine($"\n delete SUCCESS");
             }
 
+            /* AVL DELETE
+             *  x.DeleteNode(43);
+                x.DeleteNode(1);
+                x.DeleteNode(39);
+                x.DeleteNode(12);
+                x.DeleteNode(23);
+             */
 
 
 
             /****   Test 3  - SEARCH NODE  ******/
 
-            //var result44 = x.Search(44);
+            var result44 = x.Search(44);
 
-            //Console.WriteLine($"\n Find Node 44 = {result44?.Data}");
+            Console.WriteLine($"\n Find Node 44 = {result44}");
 
-            //var result555 = x.Search(555);
+            var result555 = x.Search(555);
 
-            //Console.WriteLine($"\n Find Node 555 = {result555?.Data}");
+            Console.WriteLine($"\n Find Node 555 = {result555}");
         }
     }
 }

@@ -9,7 +9,7 @@
     ///    The values in the right subtree are greater than the value of the node.
     ///    This property holds true for all nodes in the tree.
     /// </summary>
-    internal class BinarySearchTreeIterativeNumber : IBinarySearchTreeNumber
+    internal class BinarySearchTreeIterativeNumber : IBinaryTreeNumber
     {
         private BinarySearchTreeNode rootNode;
 
@@ -342,7 +342,7 @@
         /// Properties of a BST - Each node in Binary Search Tree (BST) is like a root with its DATA and a reference LEFT and RIGHT NODE
         /// </summary>
         /// <returns></returns>
-        public BinarySearchTreeNode Search(int data)
+        public bool Search(int data)
         {
             BinarySearchTreeNode currentNode = rootNode;
 
@@ -350,7 +350,7 @@
             {
                 //IF INPUT matched to currentNode NODE DATA, then break the loop and RETURN currentNode
                 if (currentNode.Data == data)
-                    break;
+                    return true;
 
                 //IF INPUT is Less than DATA of the current node, it will only be there in its left node or left sub tree
                 if (data < currentNode.Data)
@@ -363,7 +363,7 @@
                 }
             }
 
-            return currentNode;
+            return false;
         }
     }
 }
