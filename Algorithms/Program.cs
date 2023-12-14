@@ -6,6 +6,7 @@ using Algorithms.DataStructure.SinglyLinkedListStacked;
 using Algorithms.SearchAlgorithms;
 using Algorithms.Sorting;
 using Algorithms.TreeDataStructure;
+using Algorithms.TreeDataStructure.BTree;
 
 namespace Algorithms
 {
@@ -40,7 +41,8 @@ namespace Algorithms
             //DoubleLinkedListNumberTEST.TestMethod();
             //CircularSinglyLinkedListNumberTEST.TestMethod();
             //StackedSinglyLinkedListNumberTEST.TestMethod();
-            BinaryTreeNumberTest.TestMethod();
+            //BinaryTreeNumberTest.TestMethod();
+            BTreeNumberTEST.TestMethod();
         }
     }
 }

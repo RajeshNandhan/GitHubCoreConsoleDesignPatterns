@@ -121,3 +121,16 @@ BSTs are widely used due to their efficiency in searching, insertion, and deleti
 They are utilized in various applications such as database systems, as the underlying structure for symbol tables in programming, 
 and in implementing efficient searching algorithms like binary search. However, it's important to note that the efficiency of BST operations 
 depends on the tree's balanced nature, which ensures that the tree remains relatively shallow and balanced for optimal performance.
+
+
+
+
+AVL
+
+/* Constructing tree given in the example
+              30
+             /  \
+           20   40
+          /  \     \
+         10  25    50
+        */

@@ -11,12 +11,12 @@ namespace Algorithms.TreeDataStructure
             //IBinaryTreeNumber x = new BinarySearchTreeIterativeNumber();
             IBinaryTreeNumber x = new AVLTreeNumber();
 
-            TestMethod_Recursive(x);
+            TestMethod_BinaryTreeNumber(x);
 
             Console.ReadKey();
         }
 
-        private static void TestMethod_Recursive(IBinaryTreeNumber x)
+        private static void TestMethod_BinaryTreeNumber(IBinaryTreeNumber x)
         {
             /****   Test 1 - ADD NODE  ******/
 
