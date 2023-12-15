@@ -1,0 +1,21 @@
+﻿
+Abstract Factory - Creational
+
+=============================================================================
+
+Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+
+The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme 
+without specifying their concrete classes
+
+=============================================================================
+
+Provides an interface (AbstractProductFactory) for creating families 
+
+of related or dependent objects like {KeyboardAbstractProduct , MonitorAbstractProduct}
+
+without specifying their concrete classes like {IPodKeyboard, IPodMonitor}, {LaptopKeyboard, LaptopMonitor}, {MobileKeyboard, MobileMonitor}
+
+The abstract factory pattern provides a way to encapsulate a group of individual factories like {AbstractProductFactory}
+that have a common theme like {Keyboard, Monitor} without specifying their concrete classes

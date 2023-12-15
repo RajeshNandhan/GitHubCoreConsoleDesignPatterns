@@ -1,5 +1,7 @@
 C# Design Patterns
 
+======================================
+
 DO Factory
 
 https://www.dofactory.com/net/design-patterns
@@ -9,15 +11,7 @@ Christopher Okhravi
 
 https://www.youtube.com/watch?v=v-GiuMmsXj4&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=5
 
-
-
-https://www.youtube.com/watch?v=6UpMfHpPHdo&t=2s
-
 https://www.youtube.com/watch?v=0mcP8ZpUR38
 
 
-More Design Pattern
-
-https://github.com/anupavanm/csharp-design-patterns-for-humans#-state
-
-https://github.com/nemanjarogic/DesignPatternsLibrary/tree/main/src/BehavioralPatterns
+======================================

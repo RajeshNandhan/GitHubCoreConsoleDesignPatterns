@@ -1,6 +1,0 @@
-def __iter__(self):
-        current = self.head
-
-        while current:
-            yield current
-            current = current.next_node

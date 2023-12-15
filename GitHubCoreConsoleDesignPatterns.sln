@@ -11,10 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralPatterns", "Struc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{78C246AF-79C8-4115-A226-D08190164EE8}"
 	ProjectSection(SolutionItems) = preProject
-		BinarySearchTree.txt = BinarySearchTree.txt
+		Notes\BinarySearchTree.txt = Notes\BinarySearchTree.txt
 		Notes\DataStructure.txt = Notes\DataStructure.txt
 		Notes\DesignPatternsLinks.txt = Notes\DesignPatternsLinks.txt
-		Notes\Git.txt = Notes\Git.txt
 		Notes\PatternsDescription.txt = Notes\PatternsDescription.txt
 		Notes\SearchAlgorithmsLinks.txt = Notes\SearchAlgorithmsLinks.txt
 		Notes\SortAlgorithmsLinks.txt = Notes\SortAlgorithmsLinks.txt

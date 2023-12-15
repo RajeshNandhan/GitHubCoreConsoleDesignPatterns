@@ -1,15 +1,21 @@
 ﻿
-Note
+Factory Method - Creational
 
-The Factory Method design pattern defines an interface (AbstractProductCreator) for creating an object, 
+===============================================================================================
 
-but let subclasses (derived classes) (ConcreteProductComputerCreator, ConcreteProductLaptopCreator, ConcreteProductMobileCreator) 
-decide which class to instantiate.
+Provides an interface for creating objects in a superclass,
+but allows subclasses to alter the type of objects that will be created.
 
-
-This pattern lets a class defer instantiation to subclasses.
-
-here class to instantiate as object are (ConcreteProductComputer, ConcreteProductLaptop, ConcreteProductMobile)
+It uses factory methods to deal with the problem of creating objects
+without having to specify the exact class of the object that will be created. 
 
 
-Frequency of use: high
+===============================================================================================
+
+Provides an interface for creating objects (IPod, Laptop, Mobile) in a superclass (AbstractProductFactory),
+but allows subclasses (BalanceProductFactory, RandomProductFactory) to alter the type of objects that will be created.
+
+It uses factory methods to deal with the problem of creating objects (AbstractProduct)
+without having to specify the exact class of the object that will be created. 
+
+===============================================================================================

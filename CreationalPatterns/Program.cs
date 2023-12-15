@@ -10,11 +10,11 @@ namespace CreationalPatterns
     {
         static void Main(string[] args)
         {
-            //FactoryMethodClient.TestMethod();
+            FactoryMethodClient.TestMethod();
             //AbstractFactoryClient.TestMethod();
             //BuilderClient.TestMethod();
             //SingletonClient.TestMethod();
-            PrototypeClient.TestMethod();
+            //PrototypeClient.TestMethod();
         }
     }
 }

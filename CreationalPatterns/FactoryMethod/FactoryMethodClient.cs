@@ -4,18 +4,17 @@ namespace CreationalPatterns.FactoryMethod
 {
     internal class FactoryMethodClient
     {
-        /// <summary>
-        /// BuyProduct - Client implementation
-        /// user provides a choice of product
-        /// based on user choice of product, particular product created using factory method
-        /// </summary>
-        public static void BuyProduct()
+        public static void TestMethod()
         {
             bool canContinue;
+
+            Console.WriteLine("Please enter 'B' for Balance Product Factory to Create a Product\n");
+            Console.WriteLine("Please enter 'R' for Random Product Factory to Create a Product\n\n");
+
             do
             {
-                Console.WriteLine("Please enter I for IPod or L for Laptop, or M for Mobile\n");
-                Console.WriteLine("Please enter any key except I, L, M, to exit\n\n");
+                Console.WriteLine("Please enter any key except B,R, to exit");
+
                 ConsoleKeyInfo consoleKeyInfo = Console.ReadKey();
                 string userEnteredKey = consoleKeyInfo.Key.ToString().ToLower();
                 canContinue = true;
@@ -24,14 +23,11 @@ namespace CreationalPatterns.FactoryMethod
 
                 switch (userEnteredKey)
                 {
-                    case "i":
-                        productFactory = new IPodFactory();
+                    case "r":
+                        productFactory = new RandomProductFactory();
                         break;
-                    case "l":
-                        productFactory = new LaptopFactory();
-                        break;
-                    case "m":
-                        productFactory = new MobileFactory();
+                    case "b":
+                        productFactory = new BalanceProductFactory();
                         break;
                     default:
                         canContinue = false;
@@ -44,18 +40,7 @@ namespace CreationalPatterns.FactoryMethod
 
                     Console.WriteLine("\n " + abstractProduct.ToProductString() + " \n");
                 }
-                else
-                {
-                    Console.WriteLine("\n thank you");
-                }
-
-
             } while (canContinue);
-        }
-
-        public static void TestMethod()
-        {
-            BuyProduct();
         }
     }
 }

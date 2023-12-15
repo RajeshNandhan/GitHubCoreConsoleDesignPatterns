@@ -9,7 +9,7 @@
         {
             MonitorSize = monitorSize;
             NumberOfKeys = numberOfKeys;
-            ProductName = "Laptop";
+            ProductName = "Mobile";
         }
     }
 }

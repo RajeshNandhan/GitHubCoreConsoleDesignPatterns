@@ -1,7 +1,3 @@
-Abstract Factory - Creational - 
-Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
-
-
 Adapter - Structural - 
 Allows objects with incompatible interfaces to collaborate.
 
@@ -9,11 +5,6 @@ Allows objects with incompatible interfaces to collaborate.
 Bridge - Structural - 
 Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which 
 can be developed independently of each other.
-
-
-Builder - Creational -
-Lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object 
-using the same construction code.
 
 
 Chain Of Responsibility - Behavioral - 
@@ -40,10 +31,6 @@ Facade - Structural -
 Provides a simplified interface to a library, a framework, or any other complex set of classes.
 This makes a complex body of code simpler to use and consume.
 
-
-Factory Method - Creational - 
-Provides an interface for creating objects in a superclass, but allows subclasses
-to alter the type of objects that will be created.
 
 
 Flyweight - Structural - 

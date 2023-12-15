@@ -44,32 +44,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractFactory\AbstractFactoryClient.cs" />
-    <Compile Include="AbstractFactory\AbstractProductFactory.cs" />
-    <Compile Include="AbstractFactory\IPodFactory.cs" />
-    <Compile Include="AbstractFactory\IPodKeyboard.cs" />
-    <Compile Include="AbstractFactory\IPodMonitor.cs" />
-    <Compile Include="AbstractFactory\KeyboardAbstractProduct.cs" />
-    <Compile Include="AbstractFactory\LaptopFactory.cs" />
-    <Compile Include="AbstractFactory\LaptopKeyboard.cs" />
-    <Compile Include="AbstractFactory\LaptopMonitor.cs" />
-    <Compile Include="AbstractFactory\MobileFactory.cs" />
-    <Compile Include="AbstractFactory\MobileKeyboard.cs" />
-    <Compile Include="AbstractFactory\MobileMonitor.cs" />
-    <Compile Include="AbstractFactory\MonitorAbstractProduct.cs" />
+    <Compile Include="AbstractFactory\AbstractCreator\AbstractProductFactory.cs" />
+    <Compile Include="AbstractFactory\ConcreateCreater\IPodFactory.cs" />
+    <Compile Include="AbstractFactory\ConcreateProducts\IPodKeyboard.cs" />
+    <Compile Include="AbstractFactory\ConcreateProducts\IPodMonitor.cs" />
+    <Compile Include="AbstractFactory\AbstractProducts\KeyboardAbstractProduct.cs" />
+    <Compile Include="AbstractFactory\ConcreateCreater\LaptopFactory.cs" />
+    <Compile Include="AbstractFactory\ConcreateProducts\LaptopKeyboard.cs" />
+    <Compile Include="AbstractFactory\ConcreateProducts\LaptopMonitor.cs" />
+    <Compile Include="AbstractFactory\ConcreateCreater\MobileFactory.cs" />
+    <Compile Include="AbstractFactory\ConcreateProducts\MobileKeyboard.cs" />
+    <Compile Include="AbstractFactory\ConcreateProducts\MobileMonitor.cs" />
+    <Compile Include="AbstractFactory\AbstractProducts\MonitorAbstractProduct.cs" />
     <Compile Include="Builder\BuilderClient.cs" />
     <Compile Include="Builder\IPodBuilder.cs" />
     <Compile Include="Builder\MobileBuilder.cs" />
     <Compile Include="Builder\Product.cs" />
     <Compile Include="Builder\AbstractProductBuilder.cs" />
     <Compile Include="Builder\LaptopBuilder.cs" />
-    <Compile Include="FactoryMethod\AbstractProduct.cs" />
-    <Compile Include="FactoryMethod\AbstractProductFactory.cs" />
-    <Compile Include="FactoryMethod\IPod.cs" />
-    <Compile Include="FactoryMethod\IPodFactory.cs" />
-    <Compile Include="FactoryMethod\Laptop.cs" />
-    <Compile Include="FactoryMethod\LaptopFactory.cs" />
-    <Compile Include="FactoryMethod\Mobile.cs" />
-    <Compile Include="FactoryMethod\MobileFactory.cs" />
+    <Compile Include="FactoryMethod\AbstractProducts\AbstractProduct.cs" />
+    <Compile Include="FactoryMethod\AbstractCreator\AbstractProductFactory.cs" />
+    <Compile Include="FactoryMethod\ConcreateProducts\IPod.cs" />
+    <Compile Include="FactoryMethod\ConcreateCreater\RandomProductFactory.cs" />
+    <Compile Include="FactoryMethod\ConcreateProducts\Laptop.cs" />
+    <Compile Include="FactoryMethod\ConcreateCreater\BalanceProductFactory.cs" />
+    <Compile Include="FactoryMethod\ConcreateProducts\Mobile.cs" />
     <Compile Include="FactoryMethod\FactoryMethodClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +88,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AbstractFactory\Notes.txt" />
     <Content Include="Builder\Note.txt" />
     <Content Include="FactoryMethod\Note.txt" />
   </ItemGroup>

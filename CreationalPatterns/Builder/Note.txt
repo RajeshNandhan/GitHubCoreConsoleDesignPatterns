@@ -1,1 +1,31 @@
-﻿https://www.dofactory.com/net/builder-design-pattern
+﻿
+Builder - Creational
+
+
+===============================================================================
+
+Lets you construct complex objects step by step.
+
+The pattern allows you to produce different types and representations of an object using the same construction code.
+
+
+
+Allows you to create different flavors of an object while avoiding constructor pollution. 
+
+Useful when there could be several flavors of an object. Or when there are a lot of steps involved in creation of an object.
+
+
+The builder pattern is an intentions of finding a solution to the telescoping constructor anti-pattern.
+
+Having said that let me add a bit about what telescoping constructor anti-pattern is.
+At one point or the other we have all seen a constructor like below:
+
+public Burger(int size, bool cheese, bool pepperoni, bool lettuce, bool tomato)
+{
+}
+
+As you can see; the number of constructor parameters can quickly get out of hand 
+and it might become difficult to understand the arrangement of parameters.
+
+Plus this parameter list could keep on growing if you would want to add more options in future.
+This is called telescoping constructor anti-pattern.
