@@ -30,6 +30,56 @@
             return result;
         }
 
+        public bool Search(int data)
+        {
+            return SearchKey(RootNode, data);
+        }
+
+        /// <summary>
+        /// Data are stored in DataCollection of a node and DataCollection of childnodes
+        /// First search "data" in DataCollection of a node if not found
+        /// CHekc if given node has ChildNode, identify which child node most probbably will have data
+        /// Second search "data" in DataCollection of a  childnode
+        /// For example RootNode.DataCollection = [41,152] and RootNode.ChildNodes = [{12 ,23 ,39} ,{43, 44, 134}, {175, 181, 190}]
+        /// TEST 1
+        /// Iteration 1 - Search for 134 in RootNode.DataCollection [41,152]
+        /// data is GREATER THAN 41 but LESS THAN 152, { 41 > 134 < 152}
+        /// CURRENT INDEX IS 1 WHERE Data is 152 and Data should be in RootNode.ChildNodes[1]
+        /// Iteration 2 - Search for 134 in RootNode.ChildNodes[CURRENT INDEX = 1].DataCollection = {43, 44, 134}
+        /// data is GREATER THAN 43 ,44 but not grater than 134 
+        /// check if data is 134 and data matching
+        /// 
+        /// TEST 2
+        /// Iteration 1 - Search for 190 in RootNode.DataCollection and data is GREATER THAN 41 and GREATER THAN 152 
+        /// CURRENT INDEX IS 2 and Data should be in RootNode.ChildNodes[2], { 41 < 190, 152 < 190}
+        /// Iteration 2 - Search for 134 in RootNode.ChildNodes[2].DataCollection = {175, 181, 190}
+        /// data is greater than 175 , 181 but not grater than 190 
+        /// check if data is 190 and data matching
+        /// </summary>
+        private bool SearchKey(BTreeNode node, int data)
+        {
+            int i = 0;
+            // IF data present node.DataCollection, either data will match to node.DataCollection or its child node
+            // IF data present node.DataCollection, index will COUNT + 1 that is right side child node of collection
+            while (i < node.DataCollection.Count && data > node.DataCollection[i])
+            {
+                i++;
+            }
+
+            if (i < node.DataCollection.Count && data == node.DataCollection[i])
+            {
+                return true; // Key found in this node
+            }
+            else if (node.ChildNodes.Count == 0)
+            {
+                return false; // Key not found in leaf node
+            }
+            else
+            {
+                return SearchKey(node.ChildNodes[i], data); // Recursively search in child node
+            }
+        }
+
         private void InOrderTraversal(BTreeNode node, List<int> result)
         {
             if (node != null)
