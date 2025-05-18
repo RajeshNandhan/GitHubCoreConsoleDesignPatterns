@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Algorithms
+namespace Algorithms.Extensions
 {
     public static class NumberArrayExtensions
     {

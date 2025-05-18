@@ -1,4 +1,5 @@
-﻿using Algorithms.TreeDataStructure.AVLTree;
+﻿using Algorithms.Extensions;
+using Algorithms.TreeDataStructure.AVLTree;
 using Algorithms.TreeDataStructure.BinarySearchTree;
 
 namespace Algorithms.TreeDataStructure

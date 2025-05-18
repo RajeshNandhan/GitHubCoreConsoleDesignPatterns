@@ -1,4 +1,6 @@
-﻿namespace Algorithms.TreeDataStructure.BTree
+﻿using Algorithms.Extensions;
+
+namespace Algorithms.TreeDataStructure.BTree
 {
     public class BTreeNumberTEST
     {

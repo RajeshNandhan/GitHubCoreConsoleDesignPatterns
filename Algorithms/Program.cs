@@ -3,6 +3,7 @@ using Algorithms.DataStructure.CircularSinglyLinkedList;
 using Algorithms.DataStructure.DoublyLinkedList;
 using Algorithms.DataStructure.SinglyLinkedList;
 using Algorithms.DataStructure.SinglyLinkedListStacked;
+using Algorithms.Extensions;
 using Algorithms.SearchAlgorithms;
 using Algorithms.Sorting;
 using Algorithms.TreeDataStructure;
@@ -14,9 +15,10 @@ namespace Algorithms
     {
         static void Main()
         {
-            DataStructureTest();
-            SearchTest();
-            SortTest();
+            //DataStructureTest();
+            //SearchTest();
+            //SortTest();
+            ExtensionsTest();
         }
 
         private static void SearchTest()
@@ -43,6 +45,12 @@ namespace Algorithms
             //StackedSinglyLinkedListNumberTEST.TestMethod();
             //BinaryTreeNumberTest.TestMethod();
             BTreeNumberTEST.TestMethod();
+        }
+
+        private static void ExtensionsTest()
+        {
+            //SerializationExtension.TestMethod();
+            SerializationExtension2.TestMethod();
         }
     }
 }
